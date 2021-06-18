@@ -423,7 +423,6 @@
 		6CF0AE662678ABDD00AD4441 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		6CF0AE672678ABDD00AD4441 /* authorize_denied.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = authorize_denied.png; sourceTree = "<group>"; };
 		6CF0AE952678AD7100AD4441 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HockeySDKResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CF0AE972678AD7100AD4441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,7 +450,6 @@
 				6C0A6868267697040045696E /* README.md */,
 				6CBC0894265E648E0047BC39 /* Bugsplat */,
 				6CBC089D265E77200047BC39 /* Vendor */,
-				6CF0AE962678AD7100AD4441 /* HockeySDKResources */,
 				6CBC0893265E648E0047BC39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -782,14 +780,6 @@
 				6CF0AE672678ABDD00AD4441 /* authorize_denied.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		6CF0AE962678AD7100AD4441 /* HockeySDKResources */ = {
-			isa = PBXGroup;
-			children = (
-				6CF0AE972678AD7100AD4441 /* Info.plist */,
-			);
-			path = HockeySDKResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1339,7 +1329,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TN6R4Q475K;
-				INFOPLIST_FILE = HockeySDKResources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bugsplat.ios.HockeySDKResources;
@@ -1356,7 +1345,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TN6R4Q475K;
-				INFOPLIST_FILE = HockeySDKResources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bugsplat.ios.HockeySDKResources;
