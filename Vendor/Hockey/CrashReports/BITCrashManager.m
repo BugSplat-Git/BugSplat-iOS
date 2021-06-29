@@ -1555,6 +1555,8 @@ __attribute__((noreturn)) static void uncaught_cxx_exception_handler(const BITCr
 
 - (NSData *)postBodyWithXML:(NSString *)xml attachment:(BITHockeyAttachment *)attachment boundary:(NSString *)boundary {
   NSMutableData *postBody =  [NSMutableData data];
+
+    NSLog(@"%@", xml);
   
   //  [postBody appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
   [postBody appendData:[BITHockeyAppClient dataWithPostValue:BITHOCKEY_NAME

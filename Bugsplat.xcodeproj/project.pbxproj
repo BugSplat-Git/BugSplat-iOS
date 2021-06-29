@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		6C0A686626768ECC0045696E /* BugsplatStartupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A686426768ECC0045696E /* BugsplatStartupManager.m */; };
 		6C0A68872676A99B0045696E /* BugsplatAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0A68852676A99B0045696E /* BugsplatAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C0A68882676A99B0045696E /* BugsplatAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A68862676A99B0045696E /* BugsplatAttachment.m */; };
+		6C88BDFB268A93E800385001 /* CrashReporter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C88BDF9268A93DB00385001 /* CrashReporter.xcframework */; };
+		6C88BDFC268A93E800385001 /* CrashReporter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C88BDF9268A93DB00385001 /* CrashReporter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6CBC0897265E648E0047BC39 /* Bugsplat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC0895265E648E0047BC39 /* Bugsplat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CBC0934265E79320047BC39 /* BITHockeyManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC08A0265E79300047BC39 /* BITHockeyManagerDelegate.h */; };
 		6CBC0935265E79320047BC39 /* BITHockeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC08A1265E79300047BC39 /* BITHockeyManager.h */; };
@@ -155,7 +157,6 @@
 		6CBC0C05265F01BC0047BC39 /* BITTelemetryObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC0BEC265F01BC0047BC39 /* BITTelemetryObject.h */; };
 		6CBC0C06265F01BC0047BC39 /* BITDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC0BED265F01BC0047BC39 /* BITDomain.h */; };
 		6CBC0C07265F01BC0047BC39 /* BITSessionState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC0BEE265F01BC0047BC39 /* BITSessionState.h */; };
-		6CBC0C09265F02520047BC39 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBC0C08265F02520047BC39 /* CrashReporter.framework */; };
 		6CF0AE292678344B00AD4441 /* BugsplatStartupManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0A6867267695DB0045696E /* BugsplatStartupManagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CF0AE9D2678ADAA00AD4441 /* HockeySDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0AE2E2678ABDD00AD4441 /* HockeySDK.strings */; };
 		6CF0AE9E2678ADAA00AD4441 /* authorize_denied@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0AE302678ABDD00AD4441 /* authorize_denied@2x.png */; };
@@ -211,6 +212,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6C88BDFD268A93E800385001 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6C88BDFC268A93E800385001 /* CrashReporter.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6C0A686126768BC60045696E /* buildnumber.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = buildnumber.xcconfig; sourceTree = "<group>"; };
 		6C0A686326768ECC0045696E /* BugsplatStartupManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugsplatStartupManager.h; sourceTree = "<group>"; };
@@ -219,6 +234,7 @@
 		6C0A6868267697040045696E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6C0A68852676A99B0045696E /* BugsplatAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugsplatAttachment.h; sourceTree = "<group>"; };
 		6C0A68862676A99B0045696E /* BugsplatAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugsplatAttachment.m; sourceTree = "<group>"; };
+		6C88BDF9268A93DB00385001 /* CrashReporter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CrashReporter.xcframework; sourceTree = "<group>"; };
 		6CBC0892265E648E0047BC39 /* Bugsplat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bugsplat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBC0895265E648E0047BC39 /* Bugsplat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bugsplat.h; sourceTree = "<group>"; };
 		6CBC0896265E648E0047BC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -365,7 +381,6 @@
 		6CBC0BEC265F01BC0047BC39 /* BITTelemetryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BITTelemetryObject.h; sourceTree = "<group>"; };
 		6CBC0BED265F01BC0047BC39 /* BITDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BITDomain.h; sourceTree = "<group>"; };
 		6CBC0BEE265F01BC0047BC39 /* BITSessionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BITSessionState.h; sourceTree = "<group>"; };
-		6CBC0C08265F02520047BC39 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
 		6CF0AE2F2678ABDD00AD4441 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/HockeySDK.strings; sourceTree = "<group>"; };
 		6CF0AE302678ABDD00AD4441 /* authorize_denied@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "authorize_denied@2x.png"; sourceTree = "<group>"; };
 		6CF0AE312678ABDD00AD4441 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HockeySDK.strings"; sourceTree = "<group>"; };
@@ -430,7 +445,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CBC0C09265F02520047BC39 /* CrashReporter.framework in Frameworks */,
+				6C88BDFB268A93E800385001 /* CrashReporter.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +505,7 @@
 		6CBC089E265E77770047BC39 /* PLCrashReporter */ = {
 			isa = PBXGroup;
 			children = (
-				6CBC0C08265F02520047BC39 /* CrashReporter.framework */,
+				6C88BDF9268A93DB00385001 /* CrashReporter.xcframework */,
 			);
 			path = PLCrashReporter;
 			sourceTree = "<group>";
@@ -891,6 +906,7 @@
 				6CBC088E265E648E0047BC39 /* Sources */,
 				6CBC088F265E648E0047BC39 /* Frameworks */,
 				6CBC0890265E648E0047BC39 /* Resources */,
+				6C88BDFD268A93E800385001 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1272,6 +1288,7 @@
 		6CBC089B265E648E0047BC39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1299,6 +1316,7 @@
 		6CBC089C265E648E0047BC39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

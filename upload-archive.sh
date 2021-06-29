@@ -32,8 +32,8 @@ ARCHIVE=$( /bin/ls -t "${ARCHIVE_DIR}" | /usr/bin/grep xcarchive | /usr/bin/sed 
 echo "Archive: ${ARCHIVE}" > $LOG 2>&1
 
 APP="${ARCHIVE_DIR}/${ARCHIVE}/Products/Applications/${PRODUCT_NAME}.app"
-APP_MARKETING_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${APP}/Contents/Info.plist")
-APP_BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${APP}/Contents/Info.plist")
+APP_MARKETING_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${APP}/Info.plist")
+APP_BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${APP}/Info.plist")
 
 echo "App marketing version: ${APP_MARKETING_VERSION}" >> $LOG 2>&1
 echo "App bundle version: ${APP_BUNDLE_VERSION}" >> $LOG 2>&1
@@ -45,7 +45,7 @@ then
     APP_VERSION="${APP_VERSION} (${APP_BUNDLE_VERSION})"
 fi
 
-BUGSPLAT_SERVER_URL=$(/usr/libexec/PlistBuddy -c "Print BugsplatServerURL" "${APP}/Contents/Info.plist")
+BUGSPLAT_SERVER_URL=$(/usr/libexec/PlistBuddy -c "Print BugsplatServerURL" "${APP}/Info.plist")
 BUGSPLAT_SERVER_URL=${BUGSPLAT_SERVER_URL%/}
 
 UPLOAD_URL="${BUGSPLAT_SERVER_URL}/post/plCrashReporter/symbol/"
