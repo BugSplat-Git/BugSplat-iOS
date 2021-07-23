@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    let prop: Int? = nil
+
     var body: some View {
         Button("Crash!") {
-            fatalError()
+            _ = prop!
         }
         .padding()
         .foregroundColor(.white)
