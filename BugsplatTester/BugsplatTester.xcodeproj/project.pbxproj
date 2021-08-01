@@ -36,7 +36,7 @@
 		6C0A687A26769BF30045696E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C0A687D26769BF30045696E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C0A687F26769BF30045696E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C4A97D026A9A8E100268C75 /* Bugsplat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Bugsplat.xcframework; path = ../../../Desktop/Bugsplat.xcframework; sourceTree = "<group>"; };
+		6C4A97D026A9A8E100268C75 /* Bugsplat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Bugsplat.xcframework; path = BugsplatTester/Bugsplat.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
