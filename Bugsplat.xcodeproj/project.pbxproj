@@ -12,7 +12,6 @@
 		6C0A68872676A99B0045696E /* BugsplatAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0A68852676A99B0045696E /* BugsplatAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C0A68882676A99B0045696E /* BugsplatAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A68862676A99B0045696E /* BugsplatAttachment.m */; };
 		6C88BDFB268A93E800385001 /* CrashReporter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C88BDF9268A93DB00385001 /* CrashReporter.xcframework */; };
-		6C88BDFC268A93E800385001 /* CrashReporter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C88BDF9268A93DB00385001 /* CrashReporter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6CBC0897265E648E0047BC39 /* Bugsplat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC0895265E648E0047BC39 /* Bugsplat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CBC0934265E79320047BC39 /* BITHockeyManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC08A0265E79300047BC39 /* BITHockeyManagerDelegate.h */; };
 		6CBC0935265E79320047BC39 /* BITHockeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBC08A1265E79300047BC39 /* BITHockeyManager.h */; };
@@ -219,7 +218,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6C88BDFC268A93E800385001 /* CrashReporter.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +494,7 @@
 		6CBC089D265E77200047BC39 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				6CBC089F265E777F0047BC39 /* Hockey */,
+				6CBC089F265E777F0047BC39 /* BIT */,
 				6CBC089E265E77770047BC39 /* PLCrashReporter */,
 			);
 			path = Vendor;
@@ -510,7 +508,7 @@
 			path = PLCrashReporter;
 			sourceTree = "<group>";
 		};
-		6CBC089F265E777F0047BC39 /* Hockey */ = {
+		6CBC089F265E777F0047BC39 /* BIT */ = {
 			isa = PBXGroup;
 			children = (
 				6CBC0A91265F01650047BC39 /* Telemetry */,
@@ -528,7 +526,7 @@
 				6CBC0933265E79320047BC39 /* HockeySDK.h */,
 				6CBC0A26265E80250047BC39 /* HockeySDKFeatureConfig.h */,
 			);
-			path = Hockey;
+			path = BIT;
 			sourceTree = "<group>";
 		};
 		6CBC09C7265E796F0047BC39 /* Network */ = {
