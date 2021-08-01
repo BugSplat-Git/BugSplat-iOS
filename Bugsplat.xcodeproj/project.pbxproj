@@ -1354,6 +1354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bugsplat.ios.HockeySDKResources;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -1370,6 +1371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bugsplat.ios.HockeySDKResources;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
