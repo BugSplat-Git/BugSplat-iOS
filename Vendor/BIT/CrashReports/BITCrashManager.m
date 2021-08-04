@@ -1526,7 +1526,7 @@ __attribute__((noreturn)) static void uncaught_cxx_exception_handler(const BITCr
       }
     }
     
-    crashXML = [NSString stringWithFormat:@"<crashes><crash><applicationname><![CDATA[%@]]></applicationname><uuids>%@</uuids><bundleidentifier>%@</bundleidentifier><systemversion>%@</systemversion><platform>%@</platform><senderversion>%@</senderversion><versionstring>%@</versionstring><version>%@</version><uuid>%@</uuid><log><![CDATA[%@]]></log><userid>%@</userid><username>%@</username><contact>%@</contact><installstring>%@</installstring><description><![CDATA[%@]]></description></crash></crashes>",
+    crashXML = [NSString stringWithFormat:@"<crashes><crash><bsprotocolversion>1.1</bsprotocolversion><applicationname><![CDATA[%@]]></applicationname><uuids>%@</uuids><bundleidentifier>%@</bundleidentifier><systemversion>%@</systemversion><platform>%@</platform><senderversion>%@</senderversion><versionstring>%@</versionstring><version>%@</version><uuid>%@</uuid><log><![CDATA[%@]]></log><userid>%@</userid><username>%@</username><contact>%@</contact><installstring>%@</installstring><description><![CDATA[%@]]></description></crash></crashes>",
                 [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleExecutable"],
                 appBinaryUUIDs,
                 appBundleIdentifier,
