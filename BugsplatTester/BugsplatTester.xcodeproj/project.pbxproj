@@ -11,8 +11,7 @@
 		6C0A687926769BEC0045696E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A687826769BEC0045696E /* ContentView.swift */; };
 		6C0A687B26769BF30045696E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0A687A26769BF30045696E /* Assets.xcassets */; };
 		6C0A687E26769BF30045696E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0A687D26769BF30045696E /* Preview Assets.xcassets */; };
-		6C4A97D126A9A8E100268C75 /* Bugsplat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A97D026A9A8E100268C75 /* Bugsplat.xcframework */; };
-		6C4A97D226A9A8E100268C75 /* Bugsplat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A97D026A9A8E100268C75 /* Bugsplat.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6C6A622926FF4BEA003A6C09 /* Bugsplat in Frameworks */ = {isa = PBXBuildFile; productRef = 6C6A622826FF4BEA003A6C09 /* Bugsplat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6C4A97D226A9A8E100268C75 /* Bugsplat.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +34,6 @@
 		6C0A687A26769BF30045696E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C0A687D26769BF30045696E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C0A687F26769BF30045696E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C4A97D026A9A8E100268C75 /* Bugsplat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Bugsplat.xcframework; path = BugsplatTester/Bugsplat.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C4A97D126A9A8E100268C75 /* Bugsplat.xcframework in Frameworks */,
+				6C6A622926FF4BEA003A6C09 /* Bugsplat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +53,6 @@
 			children = (
 				6C0A687526769BEC0045696E /* BugsplatTester */,
 				6C0A687426769BEC0045696E /* Products */,
-				6CF0AE22267826F500AD4441 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,14 +84,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6CF0AE22267826F500AD4441 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C4A97D026A9A8E100268C75 /* Bugsplat.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +101,9 @@
 			dependencies = (
 			);
 			name = BugsplatTester;
+			packageProductDependencies = (
+				6C6A622826FF4BEA003A6C09 /* Bugsplat */,
+			);
 			productName = BugsplatTester;
 			productReference = 6C0A687326769BEC0045696E /* BugsplatTester.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 6C0A686A26769BEC0045696E;
+			packageReferences = (
+				6C6A622726FF4BEA003A6C09 /* XCRemoteSwiftPackageReference "BugSplat-iOS" */,
+			);
 			productRefGroup = 6C0A687426769BEC0045696E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -374,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C6A622726FF4BEA003A6C09 /* XCRemoteSwiftPackageReference "BugSplat-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BugSplat-Git/BugSplat-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C6A622826FF4BEA003A6C09 /* Bugsplat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C6A622726FF4BEA003A6C09 /* XCRemoteSwiftPackageReference "BugSplat-iOS" */;
+			productName = Bugsplat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C0A686B26769BEC0045696E /* Project object */;
 }

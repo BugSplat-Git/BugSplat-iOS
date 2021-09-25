@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BugSplat-iOS",
+        "repositoryURL": "https://github.com/BugSplat-Git/BugSplat-iOS",
+        "state": {
+          "branch": null,
+          "revision": "8171d9c9b50023b6ac4cb71d6c8e5bb55c708e1e",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
