@@ -50,7 +50,7 @@
 		</data>
 		<key>HockeySDKResources.bundle/Info.plist</key>
 		<data>
-		9fNw86oVghZbCWOqGVDC4W5s2w4=
+		ogyD5ggnd+nHfXdYQSb26Y3zkfc=
 		</data>
 		<key>HockeySDKResources.bundle/Ok.tiff</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>HockeySDKResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		25/DbTZizhR3S60u6xGofRMT5Zk=
+		K/OOPki38HRCyvc9JiP6jQC0c+c=
 		</data>
 		<key>HockeySDKResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>HockeySDKResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		wlyCXFtSrz49BuvzrFgh+QdegUE=
+		9GJOQsf5wmPQnqw3OwRarW0YFJQ=
 		</data>
 		<key>HockeySDKResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -275,7 +275,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		LzpxesR5MLmXsUCiTknJeL5/ySM=
+		89RK2VV+XM/nMCa7zRO0fbBQeFY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -365,7 +365,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Awy3TJkzDWPayJTpNUtG4Z0dOE4seyCj7u8mf5ZeDA=
+			HRGqSxRo/QLUoNonXNATbhnY9L8J0pC/yj4b3UflOas=
 			</data>
 		</dict>
 		<key>HockeySDKResources.bundle/Ok.tiff</key>
@@ -386,7 +386,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1qfLBCzYuaxuGzIqyCJDY64MNZr5tfon2DtOtT9lvWU=
+			5NJpApX7cd/UEAM5zXW3qOOCTwIUeEnU3pv21L1xUE4=
 			</data>
 		</dict>
 		<key>HockeySDKResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -400,7 +400,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R/zdRwG3PcWCovDpGjdzvdfo5ncjqkkQ7F/zBjG5ueU=
+			MvVzRBV3Onz7y7Bmw27wE/cq1zZrlPJqH/9rqacww3E=
 			</data>
 		</dict>
 		<key>HockeySDKResources.bundle/_CodeSignature/CodeResources</key>
