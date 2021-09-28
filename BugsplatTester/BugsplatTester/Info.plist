@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BugsplatServerURL</key>
-	<string>https://tormore.bugsplat.com/</string>
+	<string>https://fred.bugsplat.com/</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -48,7 +48,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>ITSAppUsesNonExemptEncryption</key>
-    <false/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
