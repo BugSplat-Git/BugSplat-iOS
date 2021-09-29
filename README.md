@@ -2,11 +2,11 @@
 
 The BugSplat iOS framework enables posting crash reports from iOS applications to BugSplat. Visit http://www.bugsplat.com for more information and to sign up for an account. 
 
-## 1. Requirements
+##Requirements
 
 * BugSplat supports iOS 13 and later.
 
-## 2. Integration
+##Integration
 
 BugSplat supports multiple methods for installing the library in a project.
 
@@ -56,7 +56,7 @@ To use this library in your project manually you may:
 - Choose `Frameworks` from the Destination list.
 - Drag `Bugsplat` from the Project Navigator left sidebar to the list in the new Copy Files phase.
 
-## 3. Usage
+##Usage
 
 #### Configuration
 
@@ -102,3 +102,5 @@ struct BugsplatTesterApp: App {
     }
 }
 ```
+##Bitcode
+Bitcode was introduced by Apple to allow apps sent to the App Store to be recompiled by Apple itself and apply the latest optimization. If Bitcode is enabled, the symbols generated for your app in the store will be different than the ones from your own build system. We recommend that you disable bitcode in order for BugSplat to reliably symbolicate crash reports. Disabling bitcode significantly simplifies symbols management and currently doesn't have any known downsides for iOS apps.
