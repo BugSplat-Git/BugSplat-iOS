@@ -11,13 +11,46 @@ import Bugsplat
 @main
 struct BugsplatTesterApp: App {
 
-    init() {
-        BugsplatStartupManager.shared().start()
-    }
+    private let bugsplat = BugsplatInitializer()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+class BugsplatInitializer: NSObject, BugsplatStartupManagerDelegate {
+
+    override init() {
+        super.init()
+        BugsplatStartupManager.shared().start()
+        BugsplatStartupManager.shared().delegate = self
+    }
+
+    // MARK: BugsplatStartupManagerDelegate
+
+    func bugsplatWillSendCrashReport(_ bugsplatStartupManager: BugsplatStartupManager) {
+        print("\(#file) - \(#function)")
+    }
+
+    func bugsplatWillSendCrashReportsAlways(_ bugsplatStartupManager: BugsplatStartupManager) {
+        print("\(#file) - \(#function)")
+    }
+
+    func bugsplatDidFinishSendingCrashReport(_ bugsplatStartupManager: BugsplatStartupManager) {
+        print("\(#file) - \(#function)")
+    }
+
+    func bugsplatWillCancelSendingCrashReport(_ bugsplatStartupManager: BugsplatStartupManager) {
+        print("\(#file) - \(#function)")
+    }
+
+    func bugsplatWillShowSubmitCrashReportAlert(_ bugsplatStartupManager: BugsplatStartupManager) {
+        print("\(#file) - \(#function)")
+    }
+    
+    func bugsplat(_ bugsplatStartupManager: BugsplatStartupManager, didFailWithError error: Error) {
+        print("\(#file) - \(#function)")
     }
 }
