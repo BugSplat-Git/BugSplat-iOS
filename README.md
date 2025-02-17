@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This SDK has been deprecated. Please use BugSplat's new unified macOS/iOS SDK [bugsplat-apple](https://github.com/BugSplat-Git/bugsplat-apple).
+
 ## Introduction
 
 The BugSplat iOS framework enables posting crash reports from iOS applications to BugSplat. Visit http://www.bugsplat.com for more information and to sign up for an account. 
